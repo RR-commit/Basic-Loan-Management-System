@@ -274,30 +274,6 @@ Auto-sync every 500ms via Nav.tsx polling
 - [ ] Admin dashboard loads with 50+ loans
 
 ---
-
-## Deployment
-
-### Production Build
-
-**Frontend:**
-```bash
-cd frontend
-npm run build
-# Creates optimized files in dist/ folder
-# Upload dist/ to web server (Netlify, Vercel, etc.)
-```
-
-**Backend:**
-```bash
-cd backend
-# Production server command
-uvicorn app.main:app --host 0.0.0.0 --port 8080
-# Or use Gunicorn for better performance
-gunicorn -w 4 -b 0.0.0.0:8080 app.main:app
-```
-
----
-
 ## Future Enhancements
 
 1. **Email Notifications**: Send approval/rejection emails to users
